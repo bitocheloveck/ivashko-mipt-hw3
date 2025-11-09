@@ -29,9 +29,13 @@ env/
 *.swp
 *.swo
 
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
 # OS
 .DS_Store
 Thumbs.db
 
 # Project specific
-artifacts/temp_* 
+artifacts/temp_*

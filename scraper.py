@@ -108,14 +108,14 @@ def scrape_books(is_save = False) -> list:
 if __name__ == "__main__":
     def scheduled_parsing():
         """
-        Запускает парсинг по расписанию с сохранением результатов.
+        Запускает парсинг по расписанию в 19:00 с сохранением результатов.
         Используется планировщиком schedule.
         """
         print(f"[{time.strftime('%H:%M:%S')}] Запуск парсинга по расписанию")
         scrape_books(is_save=True)
 
     schedule.clear()
-    schedule.every().day.at("15:09").do(scheduled_parsing)
+    schedule.every().day.at("19:00").do(scheduled_parsing)
 
     try:
         while True:
