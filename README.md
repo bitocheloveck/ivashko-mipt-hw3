@@ -10,20 +10,31 @@
 
 ## Структура проекта
 books-scraper/
+
 ├── artifacts/ # Результаты парсинга
+
 │ └── books_data.txt
+
 ├── notebooks/ # Jupyter ноутбуки
+
 │ └── HW_03_python_ds_2025.ipynb
+
 ├── tests/ # Автотесты
+
 │ └── test_scraper.py
+
 ├── scraper.py # Основной скрипт парсера
+
 ├── README.md # Документация
+
 ├── requirements.txt # Зависимости проекта
+
 └── .gitignore # Игнорируемые файлы
 
 ## Установка
 ### Клонируйте репозиторий:
 git clone https://github.com/bitocheloveck/ivashko-mipt-hw3.git
+
 cd ivashko-mipt-hw3
 
 ### Установите зависимости:
@@ -38,11 +49,13 @@ tests
 
 ### Автоматический режим:
 Скрипт настроен на автоматический запуск каждый день в 19:00. 
+
 Для остановки нажмите Ctrl+C.
 
 ## Функциональность
 * get_book_data(url) - извлекает данные об одной книге
 * scrape_books(is_save=True) - собирает данные со всех страниц каталога
+
   Автоматическое сохранение результатов в artifacts/books_data.txt
 * Система повторных попыток при сетевых ошибках
 
